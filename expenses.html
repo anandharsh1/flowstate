@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expense Tracker</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-green-50 to-white text-gray-900 flex flex-col justify-between">
+
+  <main class="flex-1 p-6 text-center">
+    <h2 class="text-2xl font-bold mb-4">Expense Tracker</h2>
+    <input type="number" id="dailyExpense" placeholder="Today's Expense" class="border p-2 rounded w-full max-w-sm mb-2" />
+    <input type="number" id="monthlyBudget" placeholder="Monthly Budget" class="border p-2 rounded w-full max-w-sm mb-4" />
+    <br>
+    <button onclick="addExpense()" class="bg-purple-600 text-white px-4 py-2 rounded">Add</button>
+    <p id="expenseSummary" class="mt-4 text-gray-700"></p>
+  </main>
+
+  <nav class="bg-white shadow-inner py-4 flex justify-around items-center text-sm fixed bottom-0 w-full border-t border-gray-200">
+    <a href="index.html" class="flex flex-col items-center text-gray-600 hover:text-purple-600">
+      <span>🏠</span><span>Home</span>
+    </a>
+    <a href="routine.html" class="flex flex-col items-center text-gray-600 hover:text-purple-600">
+      <span>⏱</span><span>Routine</span>
+    </a>
+    <a href="expenses.html" class="flex flex-col items-center text-purple-600 font-bold">
+      <span>💰</span><span>Expenses</span>
+    </a>
+    <a href="goals.html" class="flex flex-col items-center text-gray-600 hover:text-purple-600">
+      <span>🎯</span><span>Goals</span>
+    </a>
+  </nav>
+
+  <script src="expenses.js"></script>
+</body>
+</html>
